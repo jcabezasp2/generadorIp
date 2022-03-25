@@ -27,7 +27,7 @@ class GeneradorIpTest {
 		String ip = generador.generarIp();
 		
 		String[] numeros = ip.split("\\.");
-		assertFalse(ip.startsWith("0"));
-		assertFalse(numeros[3].endsWith("0"));
+		assertFalse(numeros[0].equals("0"));
+		assertFalse(numeros[3].equals("0"));
 	}
 }
