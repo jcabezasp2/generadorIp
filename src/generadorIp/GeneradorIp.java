@@ -4,14 +4,14 @@ import java.util.Random;
 
 public class GeneradorIp {
 
-	Random random;
+	Random random = new Random();
 	
 	public int generarNumero(int min, int max) {
 		
+		int resultado =  random.nextInt(max + 1) + min;
 		
 		
-		
-		return random.nextInt(max + 1) + min;
+		return resultado;
 	}
 	
 	public String generarIp() {

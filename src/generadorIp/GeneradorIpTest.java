@@ -21,4 +21,13 @@ class GeneradorIpTest {
 		}
 	}
 
+	@Test
+	void testGeneraIp() {
+		
+		String ip = generador.generarIp();
+		
+		String[] numeros = ip.split("\\.");
+		assertFalse(ip.startsWith("0"));
+		assertFalse(numeros[3].endsWith("0"));
+	}
 }
